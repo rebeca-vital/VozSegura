@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VozSegura</title>
+    <link rel="stylesheet" href="aluno.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="logo-sidebar">
+                <div class="icone-logo">🛡</div>
+                <h1><span>Voz</span>Segura</h1>
+                <p>Um espaço seguro para<br>
+                    comunicar situações de<br>
+                    violência no ambiente escolar.
+                </p>
+            </div>
+
+            <nav>
+                <a href="#" class="ativo" id="linkDenuncia">
+                    <span>📝</span>
+                    Fazer Denúncia
+                </a>
+                <a href="#" id="linkAcompanhamento">
+                    <span>🔍</span>
+                    Acompanhar <br>Minha Denúncia
+                </a>
+                <a href="#">
+                    <span>ⓘ</span>
+                    Informações
+                </a>
+                <a href="#">
+                    <span>?</span>
+                    Sobre o Sistema
+                </a>
+            </nav>
+
+            <div class="aviso-sidebar">
+                <strong>🛡 Sua identidade<br>é protegida.</strong>
+                <span>Sigilo garantido.</span>
+            </div>
+
+            <div class="aviso-sidebar">
+                <strong>👥 Juntos por uma <br>escola segura e <br>acolhedora</strong>
+                <span>Respeito é atitude.<br>Empatia é transformação.</span>
+            </div>
+        </aside>
+
+        <main class="conteudo">
+            <section class="tela-denuncia" id="telaDenuncia">
+                <header class="cabecalho">
+                    <div>
+                        <h1><span>Voz</span><strong>Segura</strong></h1>
+                        <p>Sua voz pode transformar</p>
+                        <p>Denuncie. Não se cale.</p>
+                    </div>
+                    <div class="seguranca">
+                        <span>🛡</span>
+                        <div>
+                            <strong>Ambiente seguro</strong>
+                            <strong>e sigiloso.</strong>
+                        </div>
+                    </div>
+                </header>
+                
+                <section class="formulario-container">
+                    <div class="titulo-formulario">
+                        <div class="icone-titulo">
+                            🛡
+                        </div>
+                        <div>
+                            <h2>FAÇA SUA DENÚNCIA</h2>
+                            <p>Ajude a construir um ambiente escolar mais seguro para todos</p>
+                        </div>
+                    </div>
+                    
+                    <div class="tipos-denuncia">
+                        <div class="opcao-denuncia selecionada">
+                            <div class="radio">●</div>
+                            <div class="icone-opcao">🎭</div>
+                            <div>
+                                <h3>Denúncia Anônima</h3>
+                                <p>Sua identidade não será revelada.</p>
+                            </div>
+                        </div>
+
+                        <div class="opcao-denuncia">
+                            <div class="radio vazio"></div>
+                            <div class="icone-opcao">♙</div>
+                            <div>
+                                <h3>Denúncia Identificada</h3>
+                                <p>Seus dados estarão disponíveis para a gestão escolar.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="formOcorrencia">
+                        <div class="campo">
+                            <label>1. INSTITUIÇÃO DE ENSINO</label>
+                            <select id="instituicao">
+                                <option value="">Selecione a instituição</option>
+                                <option value="escola">Escola</option>
+                                <option value="outra">Outra instituição</option>
+                            </select>
+                       </div>
+                       
+                       <div class="campo">
+                        <label>2.TIPO DE OCORRÊNCIA</label>
+                        
+                        <div class="tipos-ocorrencia">
+                            <div class="tipo">
+                                <span>👥</span>
+                                <strong>Bullying</strong>
+                            </div>
+                            <div class="tipo">
+                                <span>✊</span>
+                                <strong>Violência<br>Física</strong>
+                            </div>
+                            <div class="tipo">
+                                <span>◉</span>
+                                <strong>Violência<br>Psicológica</strong>
+                            </div>
+                            <div class="tipo">
+                                <span>⚠</span>
+                                <strong>Ameaça</strong>
+                            </div>
+                            <div class="tipo">
+                                <span>•••</span>
+                                <strong>Outros</strong>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="descricao">
+                            DESCREVA O QUE ACONTECEU
+                        </label>
+                        <p class="descricao-campo">
+                            Conte os detalhes da situação de forma mais clara possível
+                        </p>
+                        <textarea id="descricao"
+                        required
+                        maxlength="1000"
+                        placeholder="Conte com detalhes o que aconteceu..."></textarea>
+                        <div class="contador">0/1000
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="botao-enviar">
+                        ENVIAR DENÚNCIA
+                    </button>
+
+                    <div id="mensagem" class="mensagem">
+                    </div>
+                    <p class="termo">
+                        🔒 &nbsp; Ao enviar, você concorda que as informações fornecidas serão 
+                        utilizadas exclusivamente para garantir um ambiente escolar mais seguro.
+                    </p>
+                </form>
+            </section>
+        </section>
+        
+        <section class="tela-acompanhamento" id="telaAcompanhamento">
+
+            <div class="acompanhamento-container">
+                
+                <div class="titulo-acompanhamento">
+                    <div class="icone-titulo">🔍</div>
+                    <div>
+                        <h2>ACOMPANHAR MINHA DENÚNCIA</h2>
+                        <p>Acompanhe o andamento da sua denúncia.</p>
+                    </div>
+                </div>
+            
+            <form id="formAcompanhamento">
+                <div class="campo">
+                    <label for="protocolo">
+                        DIGITE SEU PROTOCOLO
+                    </label>
+                    <input
+                    type="text"
+                    id="protocolo"
+                    placeholder="Digite o número do protocolo"
+                    required
+                    >
+                </div>
+                
+                <button class="botao-consultar" type="submit">
+                    🔍 &nbsp; CONSULTAR
+                </button>
+            </form>
+
+            <div id="resultadoAcompanhamento" class="resultado-acompanhamento">
+                <div class="numero-denuncia">
+                    Denúncia número
+                    <span id="numeroProtocolo"></span>
+                </div>
+                <div class="andamento">
+                    <div class="etapa concluida">
+                        <div class="etapa-icone">
+                            ✓
+                        </div>
+                        <span>Denúncia enviada</span>
+                    </div>
+
+                    <div class="etapa atual">
+                        <div class="etapa-icone">
+                            ◷
+                        </div>
+
+                        <span id="statusDenuncia">
+                            Processando
+                        </span>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa-icone">
+                            ◇
+                        </div>
+                        <span>
+                            Em análise
+                        </span>
+                    </div>
+                    <div class="etapa">
+                        <div class="etapa-icone">
+                            ✓
+                        </div>
+                        <span>
+                            Concluído
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</div>
+
+<script src="aluno.js"></script>
+</body>
+</html>

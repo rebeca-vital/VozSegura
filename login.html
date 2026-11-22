@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A2E6E">
+    <title>VozSegura | Acesso</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main class="pagina-login">
+
+        <section class="painel-apresentacao">
+            <div class="imagem-escola"></div>
+            <div class="sobreposicao"></div>
+
+            <div class="conteudo-apresentacao">
+                <img
+                    src="assets/branding/logo-vozsegura.png"
+                    alt="Logo VozSegura"
+                    class="logo-vozsegura"
+                >
+
+                <div class="identidade">
+                    <h1>Voz<span>Segura</span></h1>
+                    <p>Juntos por uma escola mais segura e acolhedora.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="painel-acesso">
+            <div class="conteudo-acesso">
+
+                <header class="cabecalho-acesso">
+                    <span class="linha-destaque"></span>
+                    <p class="texto-superior">BEM-VINDO(A) AO VOZSEGURA</p>
+                </header>
+
+                <form id="formLogin">
+
+                    <div class="campo">
+                        <label for="instituicao">Instituição de ensino</label>
+                        <select id="instituicao" required>
+                            <option value="">Carregando instituições...</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label>Tipo de acesso</label>
+
+                        <div class="perfis">
+                            <button
+                                type="button"
+                                class="perfil ativo"
+                                data-perfil="Aluno"
+                                aria-pressed="true"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="m2 10 10-5 10 5-10 5-10-5Z"/>
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                    <path d="M22 10v6"/>
+                                </svg>
+                                <span>Aluno</span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="perfil"
+                                data-perfil="Gestao"
+                                aria-pressed="false"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M3 21h18"/>
+                                    <path d="M5 21V7l7-4 7 4v14"/>
+                                    <path d="M9 21v-5h6v5"/>
+                                    <path d="M9 9h.01M15 9h.01M9 12h.01M15 12h.01"/>
+                                </svg>
+                                <span>Gestão</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label id="labelIdentificador" for="identificador" class="sr-only">
+                            Matrícula
+                        </label>
+
+                        <div class="campo-com-icone">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="4"/>
+                                <path d="M5 21a7 7 0 0 1 14 0"/>
+                            </svg>
+
+                            <input
+                                type="text"
+                                id="identificador"
+                                placeholder="Digite sua matrícula"
+                                autocomplete="username"
+                                aria-label="Matrícula"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha" class="sr-only">Senha</label>
+
+                        <div class="campo-com-icone">
+                            <svg class="icone-cadeado" viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="10" width="18" height="11" rx="2"/>
+                                <path d="M7 10V7a5 5 0 0 1 10 0v3"/>
+                            </svg>
+
+                            <input
+                                type="password"
+                                id="senha"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                aria-label="Senha"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="alternar-senha"
+                                id="alternarSenha"
+                                aria-label="Mostrar senha"
+                                aria-pressed="false"
+                            >
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="entrar">
+                        Entrar
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
+                    </button>
+
+                    <div class="ajuda-login">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M9.6 9a2.5 2.5 0 0 1 4.8 1c0 2-2.4 2-2.4 4"/>
+                            <path d="M12 17h.01"/>
+                        </svg>
+                        <span>Precisa de ajuda?</span>
+                    </div>
+
+                    <p id="mensagem" role="status" aria-live="polite"></p>
+
+                </form>
+            </div>
+        </section>
+
+        <footer class="rodape">
+
+            <div class="item-rodape">
+                <svg class="icone-rodape" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                </svg>
+                <span>Dados protegidos conforme a LGPD</span>
+            </div>
+
+            <div class="item-rodape">
+                <svg class="icone-rodape" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="11" width="18" height="10" rx="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                </svg>
+                <span>Sistema Escolar Seguro</span>
+            </div>
+
+            <div class="item-rodape">
+                <svg class="icone-rodape" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                    <path d="M9 12h6"/>
+                    <path d="M12 9v6"/>
+                </svg>
+                <span>Por uma educação mais segura</span>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

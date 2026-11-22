@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0A2E6E">
+    <title>VozSegura | Painel de Gestão</title>
+
+    <link rel="stylesheet" href="gestao.css">
+    <script src="/node_modules/chart.js/dist/chart.umd.js" defer></script>
+    <script src="gestao.js" defer></script>
+</head>
+
+<body>
+    <div class="layout">
+
+        <!-- MENU LATERAL -->
+        <aside class="sidebar" id="sidebar">
+
+            <div class="marca">
+                <img src="assets/branding/logo-vozsegura.png" alt="Logo VozSegura">
+                <span>Voz<span class="marca-destaque">Segura</span></span>
+            </div>
+
+            <div class="menu-titulo">MENU PRINCIPAL</div>
+
+            <nav class="menu">
+                <button class="menu-item ativo" data-view="inicio">
+                    <span class="menu-icone">⌂</span>
+                    Painel Inicial
+                </button>
+
+                <button class="menu-item" data-view="denuncias">
+                    <span class="menu-icone">▤</span>
+                    Denúncias
+                </button>
+
+                <button class="menu-item" data-view="relatorios">
+                    <span class="menu-icone">▥</span>
+                    Relatórios
+                </button>
+
+                <button class="menu-item" data-view="historico">
+                    <span class="menu-icone">◷</span>
+                    Histórico
+                </button>
+            </nav>
+
+            <div class="menu-titulo menu-titulo-secundario">SISTEMA</div>
+
+            <nav class="menu">
+                <button class="menu-item" data-view="configuracoes">
+                    <span class="menu-icone">⚙</span>
+                    Configurações
+                </button>
+
+                <button class="menu-item sair" id="btnSair">
+                    <span class="menu-icone">↪</span>
+                    Sair
+                </button>
+            </nav>
+
+            <div class="sidebar-rodape">
+                <span class="status-ponto"></span>
+                Ambiente protegido
+            </div>
+
+        </aside>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo">
+
+            <!-- BARRA SUPERIOR -->
+            <header class="topbar">
+
+                <button
+                    class="botao-menu-mobile"
+                    id="btnMenuMobile"
+                    aria-label="Abrir menu"
+                    type="button">
+                    ☰
+                </button>
+
+                <div class="instituicao-topo">
+                    <span class="topbar-legenda">Instituição de ensino</span>
+                    <strong id="nomeInstituicao">Carregando instituição...</strong>
+                </div>
+
+                <!-- NOTIFICAÇÕES -->
+                <div class="area-notificacoes">
+
+                    <button
+                        class="botao-notificacao"
+                        id="btnNotificacoes"
+                        type="button"
+                        aria-label="Notificações"
+                        aria-expanded="false">
+
+                        <span class="icone-sino">♧</span>
+                        <span class="contador-notificacoes" id="contadorNotificacoes" hidden>0</span>
+                    </button>
+
+                    <div class="painel-notificacoes" id="painelNotificacoes" hidden>
+
+                        <div class="notificacoes-cabecalho">
+                            <strong>Notificações</strong>
+                            <span id="totalNotificacoes">0</span>
+                        </div>
+
+                        <div class="lista-notificacoes" id="listaNotificacoes">
+                            <p class="notificacoes-vazias">
+                                Nenhuma notificação no momento.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- PERFIL -->
+                <div class="perfil">
+                    <div class="avatar">G</div>
+
+                    <div>
+                        <strong id="nomeGestor">Gestor(a)</strong>
+                        <span>Gestão escolar</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="pagina">
+
+                <!-- PAINEL INICIAL -->
+                <section class="view ativa" data-page="inicio">
+
+                    <div class="boas-vindas">
+
+                        <div class="boas-vindas-texto">
+                            <span class="sobretitulo">PAINEL DE GESTÃO</span>
+
+                            <h1>Bem-vindo(a) ao VozSegura</h1>
+
+                            <p>
+                                Acompanhe as ocorrências e contribua para
+                                uma escola mais segura e acolhedora.
+                            </p>
+                        </div>
+
+                        <img
+                            src="assets/images/escola-vozsegura-transparente.png"
+                            alt="Ilustração de uma escola">
+
+                    </div>
+
+                    <div class="titulo-secao">
+                        <div>
+                            <h2>Visão geral</h2>
+                        </div>
+                    </div>
+
+                    <div class="indicadores">
+
+                        <article class="indicador">
+                            <div class="indicador-icone azul">▤</div>
+                            <div>
+                                <span>Total de denúncias</span>
+                                <strong id="totalOcorrencias">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador">
+                            <div class="indicador-icone laranja">◷</div>
+                            <div>
+                                <span>Aguardando análise</span>
+                                <strong id="totalRecebidas">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador">
+                            <div class="indicador-icone roxo">◎</div>
+                            <div>
+                                <span>Em análise</span>
+                                <strong id="totalAnalise">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador">
+                            <div class="indicador-icone verde">✓</div>
+                            <div>
+                                <span>Resolvidas</span>
+                                <strong id="totalResolvidas">0</strong>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- PENDÊNCIAS -->
+                    <div class="indicadores indicadores-pendencias">
+
+                        <article class="indicador indicador-pendencia">
+                            <div class="indicador-icone laranja">!</div>
+                            <div>
+                                <span>Prioridade alta</span>
+                                <strong id="totalPrioridadeAlta">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador indicador-pendencia">
+                            <div class="indicador-icone amarelo">◷</div>
+                            <div>
+                                <span>Acompanhamento pendente</span>
+                                <strong id="totalPendencias">0</strong>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <!-- DENÚNCIAS RECENTES -->
+                    <div class="painel-card">
+
+                        <div class="cabecalho-card">
+                            <div>
+                                <h2>Denúncias recentes</h2>
+                            </div>
+
+                            <button
+                                class="botao-secundario"
+                                data-ir="denuncias"
+                                type="button">
+                                Ver todas
+                            </button>
+                        </div>
+
+                        <div class="tabela-responsiva">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Protocolo</th>
+                                        <th>Classificação</th>
+                                        <th>Prioridade</th>
+                                        <th>Status</th>
+                                        <th>Data</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="tabelaRecentes"></tbody>
+                            </table>
+                        </div>
+
+                        <p class="mensagem-vazia" id="vazioRecentes" hidden>
+                            Nenhuma denúncia registrada até o momento.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- DENÚNCIAS -->
+                <section class="view" data-page="denuncias">
+
+                    <div class="titulo-secao">
+                        <div>
+                            <h1>Denúncias</h1>
+                        </div>
+                    </div>
+
+                    <div class="painel-card">
+
+                        <!-- FILTROS -->
+                        <div class="filtros">
+
+                            <select id="filtroStatusDenuncia">
+                                <option value="">Todos os status</option>
+                                <option value="Recebida">Recebida</option>
+                                <option value="Em análise">Em análise</option>
+                                <option value="Resolvida">Resolvida</option>
+                            </select>
+
+                            <select id="filtroPrioridade">
+                                <option value="">Todas as prioridades</option>
+                                <option value="Alta">Alta</option>
+                                <option value="Média">Média</option>
+                                <option value="Baixa">Baixa</option>
+                            </select>
+
+                        </div>
+
+                        <!-- TABELA DE DENÚNCIAS -->
+                        <div class="tabela-responsiva">
+
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Protocolo</th>
+                                        <th>Classificação</th>
+                                        <th>Prioridade</th>
+                                        <th>Status</th>
+                                        <th>Data de recebimento</th>
+                                        <th>Ação</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody id="tabelaDenuncias"></tbody>
+                            </table>
+
+                        </div>
+
+                        <p class="mensagem-vazia" id="vazioDenuncias" hidden>
+                            Nenhuma denúncia corresponde aos filtros.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- RELATÓRIOS -->
+                <section class="view" data-page="relatorios">
+
+                    <div class="titulo-secao">
+                        <div>
+                            <h1>Relatórios</h1>
+                        </div>
+                    </div>
+
+                    <div class="indicadores indicadores-relatorio">
+
+                        <article class="indicador">
+                            <div class="indicador-icone azul">▤</div>
+                            <div>
+                                <span>Total de denúncias</span>
+                                <strong id="relTotal">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador">
+                            <div class="indicador-icone laranja">!</div>
+                            <div>
+                                <span>Prioridade alta</span>
+                                <strong id="relAlta">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador">
+                            <div class="indicador-icone amarelo">◷</div>
+                            <div>
+                                <span>Prioridade média</span>
+                                <strong id="relMedia">0</strong>
+                            </div>
+                        </article>
+
+                        <article class="indicador">
+                            <div class="indicador-icone verde">✓</div>
+                            <div>
+                                <span>Prioridade baixa</span>
+                                <strong id="relBaixa">0</strong>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <div class="graficos">
+
+                        <article class="painel-card grafico-card">
+                            <h2>Denúncias por prioridade</h2>
+                            <div class="grafico-area">
+                                <canvas id="graficoPrioridade"></canvas>
+                            </div>
+                        </article>
+
+                        <article class="painel-card grafico-card">
+                            <h2>Denúncias por mês</h2>
+                            <div class="grafico-area">
+                                <canvas id="graficoMensal"></canvas>
+                            </div>
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <!-- HISTÓRICO -->
+                <section class="view" data-page="historico">
+
+                    <div class="titulo-secao">
+                        <div>
+                            <h1>Histórico</h1>
+                        </div>
+                    </div>
+
+                    <div class="painel-card historico-vazio">
+
+                        <div class="historico-icone">◷</div>
+
+                        <h2>Histórico de movimentações</h2>
+
+                        <p>
+                            Nenhuma movimentação registrada.
+                        </p>
+
+                    </div>
+
+                </section>
+
+                <!-- CONFIGURAÇÕES -->
+                <section class="view" data-page="configuracoes">
+
+                    <div class="titulo-secao">
+                        <div>
+                            <h1>Configurações</h1>
+                        </div>
+                    </div>
+
+                    <div class="painel-card configuracoes-card">
+
+                        <h2>Perfil de acesso</h2>
+
+                        <div class="dado-config">
+                            <span>Nome do usuário</span>
+                            <strong id="configNome">—</strong>
+                        </div>
+
+                        <div class="dado-config">
+                            <span>Perfil</span>
+                            <strong>Gestão escolar</strong>
+                        </div>
+
+                        <div class="dado-config">
+                            <span>Instituição</span>
+                            <strong id="configInstituicao">—</strong>
+                        </div>
+
+                        <div class="dado-config">
+                            <span>Município</span>
+                            <strong id="configMunicipio">—</strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- MODAL DE DETALHES DA DENÚNCIA -->
+    <div
+        class="modal-overlay"
+        id="modalDenuncia"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="tituloModalDenuncia"
+        hidden>
+
+        <div class="modal-denuncia">
+
+            <div class="modal-cabecalho">
+
+                <div>
+                    <span class="sobretitulo">DETALHES DO REGISTRO</span>
+                    <h2 id="tituloModalDenuncia">Denúncia</h2>
+                    <span id="modalProtocolo">Protocolo</span>
+                </div>
+
+                <button
+                    class="botao-fechar-modal"
+                    id="fecharModalDenuncia"
+                    type="button"
+                    aria-label="Fechar detalhes">
+                    ×
+                </button>
+
+            </div>
+
+            <div class="modal-conteudo">
+
+                <div class="modal-resumo">
+
+                    <div class="campo-detalhe">
+                        <span>Prioridade da análise</span>
+                        <div id="modalPrioridade">—</div>
+                    </div>
+
+                    <div class="campo-detalhe">
+                        <span>Status atual</span>
+                        <div id="modalStatus">—</div>
+                    </div>
+
+                    <div class="campo-detalhe">
+                        <span>Data de recebimento</span>
+                        <strong id="modalData">—</strong>
+                    </div>
+
+                </div>
+
+                <div class="campo-detalhe campo-classificacoes">
+                    <h3>Classificações informadas</h3>
+                    <div id="modalClassificacoes" class="lista-classificacoes">
+                        —
+                    </div>
+                </div>
+
+                <div class="campo-detalhe">
+                    <h3>Relato do aluno</h3>
+                    <div class="relato-denuncia" id="modalDescricao">
+                        Carregando relato...
+                    </div>
+                </div>
+
+                <div class="campo-detalhe">
+                    <h3>Evidências anexadas</h3>
+                    <div id="modalEvidencias" class="lista-evidencias">
+                        <p>Nenhuma evidência anexada.</p>
+                    </div>
+                </div>
+
+                <div class="area-atualizacao-status">
+
+                    <h3>Acompanhamento da denúncia</h3>
+
+                    <label for="modalNovoStatus">Atualizar status</label>
+
+                    <div class="controles-status">
+
+                        <select id="modalNovoStatus">
+                            <option value="Recebida">Recebida</option>
+                            <option value="Em análise">Em análise</option>
+                            <option value="Resolvida">Resolvida</option>
+                        </select>
+
+                        <button
+                            class="botao-atualizar"
+                            id="btnSalvarStatus"
+                            type="button">
+                            Salvar alteração
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

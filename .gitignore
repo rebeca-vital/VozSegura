@@ -1,0 +1,27 @@
+﻿# Credenciais e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Dependências Node.js
+node_modules/
+
+# Ambientes virtuais Python
+.venv/
+venv/
+
+# Arquivos temporários Python
+__pycache__/
+*.py[cod]
+
+# Configurações locais do editor
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,101 @@
+id,texto,categoria,prioridade
+1,Um estudante falou que vai me machucar se eu contar o ocorrido.,Ameaça,Alta
+2,Uma colega faz comentários que me deixam muito mal.,Violência psicológica,Média
+3,Um aluno faz comentários ofensivos sempre que me vê.,Bullying,Baixa
+4,Recebi ameaças de violência de um grupo de colegas.,Ameaça,Alta
+5,Um aluno me constrange diante da turma com frequência.,Violência psicológica,Média
+6,Um aluno me agrediu durante uma discussão.,Violência física,Alta
+7,Um estudante faz brincadeiras comigo mesmo depois de eu pedir para parar.,Bullying,Baixa
+8,Colegas fazem comentários ofensivos que estão afetando meu emocional.,Violência psicológica,Média
+9,Uma colega ameaçou partir para a agressão durante o recreio.,Ameaça,Alta
+10,Um grupo de colegas não me deixa participar das atividades.,Bullying,Baixa
+11,Uma colega me empurrou com força no corredor.,Violência física,Alta
+12,Um aluno disse que vai me bater na saída da escola.,Ameaça,Alta
+13,Disseram que vão me agredir depois da aula.,Ameaça,Alta
+14,Um grupo de estudantes tentou me agredir durante o intervalo.,Violência física,Alta
+15,Um estudante faz comentários ofensivos para me deixar abalado.,Violência psicológica,Média
+16,Um estudante afirmou que vai me atacar quando eu sair da escola.,Ameaça,Alta
+17,Um grupo de alunos tentou me machucar durante uma briga.,Violência física,Alta
+18,Colegas ficam rindo de mim e tentando me constranger.,Bullying,Média
+19,Colegas ficam fazendo comentários ofensivos sobre meu jeito de falar.,Bullying,Baixa
+20,Fui atingido por um colega durante uma briga.,Violência física,Alta
+21,Disseram que vão me bater se eu contar para a direção.,Ameaça,Alta
+22,Meus colegas fazem comentários sobre minhas roupas para me humilhar.,Bullying,Baixa
+23,Um grupo de estudantes fica tentando me constranger.,Violência psicológica,Média
+24,Um estudante me chutou durante uma briga.,Violência física,Alta
+25,Um aluno tentou me bater dentro da escola.,Violência física,Alta
+26,Fui machucado fisicamente por outro aluno.,Violência física,Alta
+27,Um grupo de estudantes tenta me intimidar na escola.,Violência psicológica,Média
+28,Um aluno fica me humilhando na frente da turma.,Violência psicológica,Média
+29,Meus colegas fazem brincadeiras comigo que já pedi para interromper.,Bullying,Média
+30,Uma estudante me empurrou e eu caí no chão.,Violência física,Alta
+31,Um aluno fica zombando de mim durante o intervalo.,Bullying,Média
+32,Um aluno fica me constrangendo sempre que estou na sala.,Violência psicológica,Média
+33,Um aluno tenta me colocar em situação constrangedora diante da turma.,Violência psicológica,Média
+34,Meus colegas fazem piadas sobre minha aparência.,Bullying,Baixa
+35,Um grupo de alunos fez ameaças de agressão contra mim.,Ameaça,Alta
+36,Um aluno me segurou e tentou me machucar.,Violência física,Alta
+37,Um aluno afirmou que pretende me agredir na saída.,Ameaça,Alta
+38,Colegas tentam me fazer sentir inferior durante as atividades.,Violência psicológica,Média
+39,Um grupo de estudantes ri de mim quando entro na sala.,Bullying,Baixa
+40,Estou sendo alvo de brincadeiras ofensivas todos os dias.,Bullying,Baixa
+41,Um grupo de estudantes disse que vai me machucar se eu denunciar.,Ameaça,Alta
+42,Um aluno disse que vai me machucar durante o intervalo.,Ameaça,Alta
+43,Um aluno faz comentários que afetam meu emocional.,Violência psicológica,Média
+44,Colegas fazem comentários para me deixar emocionalmente abalado.,Violência psicológica,Média
+45,Um estudante tenta me intimidar durante as aulas.,Violência psicológica,Média
+46,Um estudante fica me ridicularizando durante o recreio.,Bullying,Média
+47,Um estudante me empurrou e tentou continuar a agressão.,Violência física,Alta
+48,Um estudante ameaçou me atacar depois da aula.,Ameaça,Alta
+49,Uma colega tenta me humilhar sempre que participo da aula.,Violência psicológica,Média
+50,Alguns alunos ficam me excluindo das atividades da turma.,Bullying,Média
+51,Fui ameaçado por um aluno durante uma discussão.,Ameaça,Alta
+52,Um aluno tentou me bater durante o intervalo.,Violência física,Alta
+53,Alguns alunos ficam debochando de mim na sala.,Bullying,Média
+54,Um aluno tira sarro de mim sempre que participo da aula.,Bullying,Média
+55,Um estudante fica me humilhando durante as aulas.,Violência psicológica,Média
+56,Um estudante me deu um soco durante uma discussão.,Violência física,Alta
+57,Um colega me agrediu depois de uma discussão.,Violência física,Alta
+58,Dois colegas brigaram e um deles acabou me atingindo.,Violência física,Alta
+59,Um aluno sempre tenta me constranger na frente da turma.,Bullying,Baixa
+60,Colegas ficam tentando me intimidar durante as atividades.,Violência psicológica,Média
+61,Um estudante incentiva outros alunos a rirem de mim.,Bullying,Baixa
+62,Um estudante fica fazendo comentários para me deixar com medo.,Violência psicológica,Média
+63,Um estudante me ameaçou de violência durante o intervalo.,Ameaça,Alta
+64,Uma colega falou que vai me agredir quando eu estiver sozinho.,Ameaça,Alta
+65,Estou sendo intimidado por colegas durante as aulas.,Violência psicológica,Média
+66,Uma colega faz comentários ofensivos sobre mim constantemente.,Violência psicológica,Média
+67,Um grupo de estudantes ameaçou me bater caso eu procure ajuda.,Ameaça,Alta
+68,Um estudante costuma me humilhar com brincadeiras na frente da turma.,Bullying,Média
+69,Estou recebendo ameaças de agressão dentro da escola.,Ameaça,Alta
+70,Fui empurrado contra a parede por outro estudante.,Violência física,Alta
+71,Um estudante disse que vai me machucar por ter contado o que aconteceu.,Ameaça,Alta
+72,Colegas fazem comentários que me deixam constrangido diante dos outros.,Bullying,Média
+73,Uma colega me deu um tapa dentro da sala.,Violência física,Alta
+74,Um aluno coloca apelidos ofensivos em mim durante as aulas.,Bullying,Média
+75,Uma colega tentou me agredir no corredor.,Violência física,Alta
+76,Um colega me ameaçou dizendo que vai me agredir amanhã.,Ameaça,Alta
+77,Um aluno espalha apelidos ofensivos entre meus colegas.,Bullying,Média
+78,Um aluno me agrediu fisicamente durante o recreio.,Violência física,Alta
+79,Um grupo de colegas espalha apelidos desagradáveis sobre mim.,Bullying,Baixa
+80,Um aluno me bateu depois de uma discussão.,Violência física,Alta
+81,Recebi uma ameaça de agressão de outro estudante.,Ameaça,Alta
+82,Um estudante tenta me diminuir na frente dos outros alunos.,Violência psicológica,Média
+83,Um grupo de alunos disse que vai me atacar amanhã.,Ameaça,Alta
+84,Um estudante me humilha sempre que tenho que falar em público.,Violência psicológica,Média
+85,Um aluno falou que vai me bater no caminho para casa.,Ameaça,Alta
+86,Fui agredido por outro aluno no recreio.,Violência física,Alta
+87,Estou sendo provocado por colegas durante vários dias.,Bullying,Média
+88,Estou sofrendo humilhações constantes dentro da escola.,Violência psicológica,Média
+89,Alguns colegas ficam me provocando repetidamente na escola.,Bullying,Baixa
+90,Dois estudantes começaram uma briga e me machucaram.,Violência física,Alta
+91,Um colega afirmou que vai esperar por mim na saída para me bater.,Ameaça,Alta
+92,Um estudante jogou um objeto em mim durante uma discussão.,Violência física,Alta
+93,Um grupo de estudantes me empurrou durante uma discussão.,Violência física,Alta
+94,Uma colega tenta me intimidar durante o intervalo.,Violência psicológica,Média
+95,Uma colega disse que vai me bater caso eu conte para alguém.,Ameaça,Alta
+96,Uma colega ameaçou me agredir depois da aula.,Ameaça,Alta
+97,Um grupo de estudantes fica me isolando durante as atividades.,Bullying,Média
+98,Estou sendo alvo de provocações que estão afetando meu emocional.,Violência psicológica,Média
+99,Dois estudantes começaram uma briga e eu fui atingido.,Violência física,Alta
+100,Um aluno faz comentários que me deixam muito constrangido.,Violência psicológica,Média

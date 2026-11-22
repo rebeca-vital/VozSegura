@@ -1,0 +1,151 @@
+﻿id,texto,categoria,prioridade
+1,Um aluno disse que vai me bater na saída da escola hoje.,Ameaça,Alta
+2,Um colega me empurrou contra a parede e ameaçou continuar.,Violência física,Alta
+3,Um estudante me deu um soco durante o intervalo.,Violência física,Alta
+4,Um grupo cercou um aluno e ameaçou agredi-lo depois da aula.,Ameaça,Alta
+5,Um colega levantou a mão para me bater e disse que faria isso na saída.,Ameaça,Alta
+6,Fui chutado por outro estudante no corredor.,Violência física,Alta
+7,Um aluno me ameaçou com uma faca dentro da escola.,Ameaça,Alta
+8,Um estudante me deu tapas e disse que vai me pegar amanhã.,Violência física,Alta
+9,Dois colegas me seguraram enquanto outro me agredia.,Violência física,Alta
+10,Um aluno ameaçou machucar minha irmã na saída da escola.,Ameaça,Alta
+11,Um colega me jogou no chão e continuou me chutando.,Violência física,Alta
+12,"Recebi uma ameaça direta de agressão para hoje, na saída.",Ameaça,Alta
+13,Um estudante me bateu no rosto durante a aula.,Violência física,Alta
+14,Um grupo disse que vai me espancar se eu contar o que aconteceu.,Ameaça,Alta
+15,Um aluno tentou me acertar com uma cadeira durante uma briga.,Violência física,Alta
+16,Um colega me agarrou pelo pescoço durante uma discussão.,Violência física,Alta
+17,Um estudante afirmou que está esperando a saída para me agredir.,Ameaça,Alta
+18,Fui atingido por um objeto lançado por outro aluno durante uma agressão.,Violência física,Alta
+19,Um aluno me empurrou da escada de propósito.,Violência física,Alta
+20,Um colega ameaçou bater em mim e mostrou que estava carregando uma arma.,Ameaça,Alta
+21,Um estudante me deu vários socos no pátio.,Violência física,Alta
+22,Um grupo me cercou e disse que eu não sairia dali sem apanhar.,Ameaça,Alta
+23,Um aluno me deu uma rasteira e me chutou quando caí.,Violência física,Alta
+24,Um colega ameaçou me agredir imediatamente depois da aula.,Ameaça,Alta
+25,Um aluno me empurrou com força e bati a cabeça no chão.,Violência física,Alta
+26,Um colega disse que vai me esperar no portão para me machucar.,Ameaça,Alta
+27,Fui agredido por três estudantes no banheiro da escola.,Violência física,Alta
+28,Um estudante me acertou com um chute e continuou tentando me bater.,Violência física,Alta
+29,Um aluno ameaçou atacar outro estudante com um objeto cortante.,Ameaça,Alta
+30,Um colega me deu um tapa forte e tentou me derrubar.,Violência física,Alta
+31,Um estudante ameaçou me bater caso eu procurasse a coordenação.,Ameaça,Alta
+32,Um aluno me derrubou e continuou me golpeando enquanto eu tentava levantar.,Violência física,Alta
+33,Um colega disse que vai me ferir com uma faca amanhã.,Ameaça,Alta
+34,Um estudante me deu vários socos no pátio da escola.,Violência física,Alta
+35,Um grupo ameaçou agredir uma aluna por ela ter denunciado bullying.,Ameaça,Alta
+36,Um colega tentou me acertar com uma barra durante uma briga.,Violência física,Alta
+37,Um estudante me puxou pelo cabelo e me bateu no rosto.,Violência física,Alta
+38,Um aluno ameaçou me agredir na saída e disse que outros colegas participariam.,Ameaça,Alta
+39,Um colega me deu uma cotovelada de propósito e continuou a agressão.,Violência física,Alta
+40,Um estudante ameaçou bater em mim agora e avançou na minha direção.,Ameaça,Alta
+41,Um grupo de alunos me segurou à força e me bateu.,Violência física,Alta
+42,Um aluno me bateu e me ameaçou para eu não contar a ninguém.,Violência física,Alta
+43,Um colega ameaçou agredir meu amigo ainda hoje.,Ameaça,Alta
+44,Um estudante me chutou enquanto eu estava caído no chão.,Violência física,Alta
+45,Um aluno disse que vai me machucar na saída e repetiu a ameaça hoje.,Ameaça,Alta
+46,Um colega tentou me sufocar durante uma agressão.,Violência física,Alta
+47,Um grupo bloqueou a saída e ameaçou bater em quem tentasse passar.,Ameaça,Alta
+48,Um estudante me acertou com um soco e tentou me atingir novamente.,Violência física,Alta
+49,Um colega ameaçou me bater e veio para cima de mim.,Ameaça,Alta
+50,Um aluno me agrediu fisicamente durante o recreio.,Violência física,Alta
+51,Um aluno faz comentários ofensivos sobre mim quase todos os dias.,Bullying,Média
+52,Meus colegas riem da minha aparência repetidamente para me humilhar.,Bullying,Média
+53,Um estudante espalha apelidos ofensivos sobre mim pela turma há semanas.,Bullying,Média
+54,Um grupo me exclui das atividades e faz isso sempre que pode.,Bullying,Média
+55,Um colega me chama por um apelido humilhante todos os dias.,Bullying,Média
+56,Recebo mensagens ofensivas de colegas no grupo da turma com frequência.,Violência psicológica,Média
+57,Um estudante tenta me constranger na frente da turma repetidamente.,Bullying,Média
+58,Colegas fazem comentários maldosos sobre meu jeito de falar toda semana.,Bullying,Média
+59,Um grupo espalha rumores sobre mim e isso acontece há vários dias.,Violência psicológica,Média
+60,"Um aluno imita minha forma de andar para que os outros riam, repetidamente.",Bullying,Média
+61,Meus colegas escondem meus materiais para me irritar várias vezes.,Bullying,Média
+62,Um estudante me ridiculariza sempre que respondo a uma pergunta.,Bullying,Média
+63,Um grupo me provoca repetidamente durante o recreio.,Bullying,Média
+64,Um colega publica comentários humilhantes sobre mim nas redes sociais com frequência.,Violência psicológica,Média
+65,Um aluno ameaça me excluir do grupo se eu não fizer o que ele quer.,Violência psicológica,Média
+66,Colegas fazem piadas ofensivas sobre minha família repetidamente.,Bullying,Média
+67,Um estudante espalha mentiras para que ninguém queira conversar comigo.,Violência psicológica,Média
+68,Um grupo sempre interrompe minhas falas e debocha de mim na sala.,Bullying,Média
+69,Um colega me manda mensagens para me humilhar quase toda semana.,Violência psicológica,Média
+70,Alunos me excluem de trabalhos em grupo de forma recorrente para me punir.,Bullying,Média
+71,Um estudante faz comentários depreciativos sobre minha roupa toda semana.,Bullying,Média
+72,Colegas me chamam de nomes ofensivos repetidamente no corredor.,Bullying,Média
+73,Um aluno incentiva os outros a rirem de mim em várias aulas.,Bullying,Média
+74,Um grupo faz montagens para me ridicularizar e compartilha com frequência.,Violência psicológica,Média
+75,Um colega me intimida verbalmente sempre que ficamos no mesmo espaço.,Violência psicológica,Média
+76,Estudantes espalham boatos sobre mim em diferentes turmas.,Violência psicológica,Média
+77,Um aluno debocha da minha deficiência e continua mesmo após eu pedir para parar.,Bullying,Média
+78,Meus colegas fazem comentários humilhantes sobre minha aparência quase diariamente.,Bullying,Média
+79,Um estudante me pressiona e me constrange repetidamente diante dos colegas.,Violência psicológica,Média
+80,Um grupo me ignora de propósito e incentiva outros a fazerem o mesmo há semanas.,Bullying,Média
+81,Um colega compartilha rumores sobre mim em conversas da turma repetidamente.,Violência psicológica,Média
+82,Um aluno faz comentários ofensivos sobre minha origem de forma recorrente.,Bullying,Média
+83,Colegas me ridicularizam em mensagens e continuam depois que peço para parar.,Violência psicológica,Média
+84,Um estudante tenta me envergonhar na frente dos professores várias vezes.,Bullying,Média
+85,Um grupo me provoca pelo meu jeito de falar sempre que me encontra.,Bullying,Média
+86,Um colega usa ameaças de me deixar sozinho para me controlar repetidamente.,Violência psicológica,Média
+87,Alunos me imitam e riem de mim durante várias aulas.,Bullying,Média
+88,Um estudante faz comentários depreciativos sobre minha família com frequência.,Bullying,Média
+89,Um grupo espalha apelidos desagradáveis sobre mim de forma repetida.,Bullying,Média
+90,"Um colega insiste em me humilhar no grupo da sala, mesmo após pedidos para parar.",Violência psicológica,Média
+91,Um aluno faz comentários ofensivos sobre mim em quase todo intervalo.,Bullying,Média
+92,Um grupo de estudantes me exclui e debocha de mim repetidamente.,Bullying,Média
+93,Um colega tenta me intimidar verbalmente toda semana.,Violência psicológica,Média
+94,Estudantes fazem piadas humilhantes sobre meu corpo repetidamente.,Bullying,Média
+95,Um aluno me ridiculariza em público várias vezes para me envergonhar.,Bullying,Média
+96,Um grupo me manda mensagens ofensivas repetidas para me intimidar.,Violência psicológica,Média
+97,Um colega faz comentários humilhantes sobre minha família quase todos os dias.,Bullying,Média
+98,Um estudante espalha boatos e incentiva colegas a me evitar repetidamente.,Violência psicológica,Média
+99,Um grupo de alunos me provoca com apelidos ofensivos há várias semanas.,Bullying,Média
+100,Um colega tenta me constranger diante da turma de forma recorrente.,Bullying,Média
+101,Um aluno fez um comentário ofensivo sobre mim uma única vez.,Bullying,Baixa
+102,"Um colega fez uma piada desagradável sobre minha roupa hoje, sem repetição.",Bullying,Baixa
+103,Um estudante me chamou por um apelido ofensivo uma vez e parou.,Bullying,Baixa
+104,"Durante uma discussão, um colega fez um comentário rude e depois se desculpou.",Violência psicológica,Baixa
+105,"Um aluno debochou da minha resposta em uma aula, sem outros episódios relatados.",Bullying,Baixa
+106,Uma colega fez um comentário maldoso sobre meu cabelo uma vez.,Bullying,Baixa
+107,Um estudante me interrompeu e fez uma observação humilhante em uma ocasião.,Violência psicológica,Baixa
+108,Um colega fez uma brincadeira ofensiva isolada sobre meu jeito de falar.,Bullying,Baixa
+109,Um aluno fez um comentário desrespeitoso durante uma conversa e não repetiu.,Violência psicológica,Baixa
+110,"Um estudante riu de mim após uma resposta errada, em um episódio isolado.",Bullying,Baixa
+111,Uma colega fez uma observação ofensiva sobre minha mochila uma única vez.,Bullying,Baixa
+112,Um aluno fez um comentário desagradável sobre meu desenho e não voltou a fazê-lo.,Violência psicológica,Baixa
+113,"Durante um debate, um estudante usou uma expressão ofensiva contra mim uma vez.",Violência psicológica,Baixa
+114,Um colega fez uma piada inadequada sobre meu corte de cabelo em uma ocasião.,Bullying,Baixa
+115,Um estudante criticou meu jeito de falar de forma grosseira uma única vez.,Violência psicológica,Baixa
+116,Uma colega fez um comentário desagradável sobre meu material escolar uma vez.,Bullying,Baixa
+117,"Um aluno zombou de uma resposta minha em uma única aula, sem continuidade.",Bullying,Baixa
+118,Um colega fez um comentário ofensivo sobre meu time favorito uma vez.,Bullying,Baixa
+119,Um estudante fez uma observação desrespeitosa sobre meu trabalho em grupo uma vez.,Violência psicológica,Baixa
+120,"Um aluno fez uma piada ofensiva sobre minha apresentação, sem outros episódios relatados.",Bullying,Baixa
+121,Um colega usou um tom debochado comigo durante uma conversa isolada.,Violência psicológica,Baixa
+122,Um estudante fez um comentário rude sobre minha opinião e não voltou ao assunto.,Violência psicológica,Baixa
+123,Uma colega fez uma piada desagradável sobre meu estojo uma vez.,Bullying,Baixa
+124,Um aluno fez um comentário ofensivo sobre minha resposta e depois encerrou a conversa.,Bullying,Baixa
+125,Um colega fez uma observação humilhante sobre meu cartaz em uma ocasião.,Violência psicológica,Baixa
+126,"Um estudante riu de um erro meu uma vez, sem ameaças ou repetição relatada.",Bullying,Baixa
+127,Uma colega fez um comentário indelicado sobre meu cabelo em uma ocasião isolada.,Bullying,Baixa
+128,Um aluno me respondeu de maneira grosseira uma vez durante uma atividade.,Violência psicológica,Baixa
+129,Um colega fez uma brincadeira ofensiva isolada durante o intervalo.,Bullying,Baixa
+130,Um estudante fez um comentário desrespeitoso sobre minha resposta e parou após eu pedir.,Violência psicológica,Baixa
+131,Uma colega fez um comentário maldoso sobre minha letra uma única vez.,Bullying,Baixa
+132,Um aluno usou uma palavra ofensiva comigo em uma discussão isolada.,Violência psicológica,Baixa
+133,Um estudante fez uma piada desagradável sobre minha apresentação uma vez.,Bullying,Baixa
+134,"Um colega fez um comentário rude sobre minha opinião, sem ameaça ou repetição.",Violência psicológica,Baixa
+135,Uma aluna debochou de minha resposta uma vez durante a aula.,Bullying,Baixa
+136,Um estudante fez um comentário ofensivo isolado no corredor.,Violência psicológica,Baixa
+137,Um colega fez uma piada inadequada sobre meu caderno e não repetiu.,Bullying,Baixa
+138,Uma estudante criticou meu jeito de falar de forma grosseira em uma ocasião.,Violência psicológica,Baixa
+139,Um aluno fez um comentário humilhante sobre meu desenho uma vez.,Bullying,Baixa
+140,Um colega fez uma observação ofensiva durante uma conversa e depois parou.,Violência psicológica,Baixa
+141,Um estudante fez uma piada desagradável sobre minha resposta em um único episódio.,Bullying,Baixa
+142,"Uma colega fez um comentário rude sobre minha roupa uma vez, sem ameaças.",Bullying,Baixa
+143,Um aluno usou uma expressão desrespeitosa comigo em uma ocasião isolada.,Violência psicológica,Baixa
+144,Um colega fez uma brincadeira ofensiva isolada sobre minha aparência.,Bullying,Baixa
+145,Um estudante zombou de uma pergunta minha uma vez e não voltou a fazê-lo.,Bullying,Baixa
+146,Uma colega fez um comentário grosseiro sobre meu trabalho uma única vez.,Violência psicológica,Baixa
+147,Um aluno fez uma observação ofensiva sobre meu jeito de falar uma vez.,Bullying,Baixa
+148,"Um estudante fez uma piada humilhante em uma ocasião, sem continuidade relatada.",Bullying,Baixa
+149,Um colega fez um comentário desrespeitoso sobre minha opinião uma única vez.,Violência psicológica,Baixa
+150,"Um aluno fez uma observação rude sobre minha participação em uma aula, sem repetição.",Violência psicológica,Baixa
